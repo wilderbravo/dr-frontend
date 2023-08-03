@@ -46,7 +46,7 @@ export default {
           duration: "3h 45m",
         },
       ];
-      // Utilizar el hook "useStore" para acceder al store y establecer los resultados de búsqueda
+
       const store = useStore();
       store.setSearchResults(searchResults);
       store.setShowResults(true);
@@ -55,3 +55,51 @@ export default {
   },
 };
 </script>
+<style>
+.container {
+  max-width: 100%;
+  margin: 2 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+</style>

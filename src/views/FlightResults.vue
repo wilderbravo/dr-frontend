@@ -36,3 +36,55 @@ export default {
   margin-bottom: 10px;
 }
 </style>
+
+<style>
+.container {
+  max-width: 100%;
+  margin: 2 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.flight-list {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.flight-card {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flight-info {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.airline {
+  font-size: 16px;
+}
+
+.stops {
+  font-size: 16px;
+}
+
+.duration {
+  font-size: 16px;
+}
+</style>

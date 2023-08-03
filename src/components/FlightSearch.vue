@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Buscador de Tickets Aéreos</h2>
     <form @submit.prevent="searchFlights">
       <label for="origin">Ciudad de origen:</label>
